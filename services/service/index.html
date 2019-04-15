@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular services</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="./script.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container" ng-app="myApp">
+		<h1>this is angular service practise</h1>
+		<div ng-controller="myController">
+			<p>Sum of <input type="number" ng-model="x" ng-change="sumFnc()"> and <input type="number" ng-model="y" ng-change="sumFnc()"> is {{sumOf}}
+		</div>
+	</div>
+	
+</body>
+</html>

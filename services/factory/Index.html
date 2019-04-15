@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular factory method to creat a service</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="./script.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" >
+		<h1>IT is the angular js application factory pratice</h1>
+		<div ng-controller="myController">
+			<h3>Welcome {{username}}</h3>
+			<p> sum of <input  type="text" ng-model="a" ng-change="sumOfnc()">and <input ng-model="b" ng-change="sumOfnc()">is {{sumOf}}</p>
+			<p>value of ng model is {{a}} , {{b}}</p>
+		</div>
+
+	</div>
+</body>
+</html>

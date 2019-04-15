@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script type="text/javascript">
+		var newModule = angular.module("first",[]);
+
+		newModule.controller("firstComp",function(){
+			this.title = "this is first angularJS page after two years"; 
+			
+			this.fmethod  = function (){
+				return "it is time to fly in angular js clouds";
+			}
+		})
+
+	</script>
+</head>
+<body ng-app="first">
+<div ng-controller="firstComp as fc">
+	<a href="demo.html">click to redirect</a>
+	<p>{{fc.title}}</p>
+	<p>{{fc.fmethod()}}</p>
+</div>
+
+</body>
+</html>
